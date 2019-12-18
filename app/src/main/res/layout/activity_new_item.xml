@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Groups.NewItemActivity">
+
+    <EditText
+        android:id="@+id/newItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Item Name/Type"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/newItemPalette"
+        app:layout_constraintStart_toStartOf="@+id/newItemPalette"
+        app:layout_constraintTop_toBottomOf="@+id/newItemPalette" />
+
+    <EditText
+        android:id="@+id/newItemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Item Description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/newItemName"
+        app:layout_constraintStart_toStartOf="@+id/newItemName"
+        app:layout_constraintTop_toBottomOf="@+id/newItemName" />
+
+    <Button
+        android:id="@+id/btnNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="@+id/newItemDescription"
+        app:layout_constraintTop_toBottomOf="@+id/newItemDescription" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/newItemPalette"
+        android:layout_width="299dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/newItemC1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/newItemC2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/newItemC3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/newItemC4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/newItemC5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNewItem"
+        app:layout_constraintEnd_toEndOf="@+id/newItemDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Groups.AddGroupActivity">
+
+    <Switch
+        android:id="@+id/groupTypeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/addGroupName"
+        app:layout_constraintStart_toStartOf="@+id/addGroupName"
+        app:layout_constraintTop_toBottomOf="@+id/addGroupName" />
+
+    <EditText
+        android:id="@+id/addGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:ems="10"
+        android:hint="Group Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="@+id/groupTypeSwitch"
+        app:layout_constraintStart_toStartOf="@+id/groupTypeSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/groupTypeSwitch" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Wardrobe"
+        app:layout_constraintBaseline_toBaselineOf="@+id/groupTypeSwitch"
+        app:layout_constraintEnd_toStartOf="@+id/groupTypeSwitch" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Room"
+        app:layout_constraintBaseline_toBaselineOf="@+id/groupTypeSwitch"
+        app:layout_constraintStart_toEndOf="@+id/groupTypeSwitch" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Type"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/groupTypeSwitch"
+        app:layout_constraintEnd_toEndOf="@+id/groupTypeSwitch"
+        app:layout_constraintStart_toStartOf="@+id/groupTypeSwitch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

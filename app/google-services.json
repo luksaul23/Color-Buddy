@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "208718486108",
+    "firebase_url": "https://color-buddy-6d222.firebaseio.com",
+    "project_id": "color-buddy-6d222",
+    "storage_bucket": "color-buddy-6d222.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208718486108:android:476d0339577722841be499",
+        "android_client_info": {
+          "package_name": "com.example.colorbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208718486108-h6ueuijouhqvjkv69phvuadddlnph70s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.colorbuddy",
+            "certificate_hash": "5cac2e075c8e3f5465baeec063fc8a11937d160f"
+          }
+        },
+        {
+          "client_id": "208718486108-2korin7pd4mhvus3bgci8uunlpv69d5i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.colorbuddy",
+            "certificate_hash": "990871a9fdfcd3b859ed2ca6c239afe8ca410e5f"
+          }
+        },
+        {
+          "client_id": "208718486108-em3kh09p7fas0caocb6mb3f09ctgu9cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpnBsRsuur_Xq0lpO4j49jru4EyHcwBx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208718486108-em3kh09p7fas0caocb6mb3f09ctgu9cc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

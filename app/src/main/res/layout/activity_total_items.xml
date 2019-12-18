@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inventory.TotalItemsActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_total_items"
+        android:layout_width="334dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/titleTextView"
+        app:layout_constraintStart_toStartOf="@+id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <Switch
+        android:id="@+id/listSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:showText="false"
+        android:textOff="Items"
+        android:textOn="Clothes"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView_total_items"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView_total_items"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_total_items" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Clothes" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/clothes_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/listSwitch"
+        app:layout_constraintEnd_toStartOf="@+id/listSwitch" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/items_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/listSwitch"
+        app:layout_constraintStart_toEndOf="@+id/listSwitch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
